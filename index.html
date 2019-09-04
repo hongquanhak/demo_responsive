@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>RESPONSIVE WEB</title>
+    <link rel="stylesheet" href="css/flexboxgrid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,900,900italic,300italic,300"
+        rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+    <script type="text/javascript">
+        $(window).on("scroll", function () {
+            if ($(window).scrollTop()) {
+                $("header").addClass("black");
+            } else {
+                //remove the background property so it comes transparent again (defined in your css)
+                $("header").removeClass("black");
+            }
+        });
+
+        // // When the user scrolls down 50px from the top of the document, show the button
+        // window.onscroll = function () { scrollFunction() };
+
+        // function scrollFunction() {
+        //     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        //         document.getElementById("myBtn").style.display = "block";
+        //     } else {
+        //         document.getElementById("myBtn").style.display = "none";
+        //     }
+        // }
+
+        // // When the user clicks on the button, scroll to the top of the document
+        // function topFunction() {
+        //     document.body.scrollTop = 0; // For Safari
+        //     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        // }
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) {
+                    $('#myBtn').fadeIn();
+                } else {
+                    $('#myBtn').fadeOut();
+                }
+            });
+            $('#myBtn').click(function () {
+                $("html, body").animate({ scrollTop: 0 }, 600);
+                return false;
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!--HEADER -->
+    <header>
+        <div class="container">
+            <h1 class="logo">Velocity</h1>
+            <nav class="navbar">
+                <ul class="navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Pages <i class="fas fa-sort-down"></i></a>
+                        <ul>
+                            <li class="current"><a href="#">Download Apps</a></li>
+                            <li class="current"><a href="#">Blog</a></li>
+                            <li class="current"><a href="#">Blog Single</a></li>
+                            <li class="current"><a href="#">Blog Category</a></li>
+                            <li class="current"><a href="#">Blog Archive</a></li>
+                            <li class="current"><a href="#">About Us</a></li>
+                            <li class="current"><a href="#">Contact</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Log in</a></li>
+                    <li><a class="btn-sig" href="#">Sign up free</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- COVER -->
+    <div class="img-bg"></div>
+    <!-- SHOWCASE -->
+    <section id="showcase">
+        <h2 class="sum-text">Our story, our value</h2>
+        <div class="story-container container">
+            <!-- QUOTE -->
+            <div class="col">
+                <div class="about">
+                    <p>Tell users the story behind the product. Sed ut perspiciatis unde omnis iste
+                        natus error sit voluptatem accusantium doloremque laudantium, totam rem
+                        aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                        beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
+                        sit aspernatur aut odit aut fugit</p>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+                        ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
+                        parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
+                        pellentesque eu, <span class="ex-text"><a href="#">pretium quis </a></span>,
+                        sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel,
+                        aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a,
+                        venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
+                    <blockquote class="bl-quote">We believe sed ut perspiciatis unde omnis iste
+                        natus error sit voluptatem accusantium doloremque laudantium, totam rem
+                        aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                        beatae vitae dicta sunt explicabo.</blockquote>
+                </div>
+            </div>
+            <!-- TEAM -->
+            <div class="team">
+                <h3>Meet the team</h3>
+                <!-- IMAGE-ROW-1 -->
+                <div class="member ">
+                    <div class="mem1 ">
+                        <div class="member-in">
+                            <div class="profile">
+                                <img class="img-res" src="image/member-1.png" />
+                                <div class="info">
+                                    <span class="name">Mark Cooper</span>
+                                    <br>
+                                    <span class="job-title">Co-Founder</span>
+                                </div>
+                            </div>
+                            <div class="social">
+                                <ul class="socail-list">
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mem1">
+                        <div class="member-in">
+                            <div class="profile">
+                                <img class="img-res" src="image/member-2.png" />
+                                <div class="info">
+                                    <span class="name">Mark Cooper</span>
+                                    <br>
+                                    <span class="job-title">Co-Founder</span>
+                                </div>
+                            </div>
+                            <div class="social">
+                                <ul class="socail-list">
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mem1">
+                        <div class="member-in">
+                            <div class="profile">
+                                <img class="img-res" src="image/member-3.png" />
+                                <div class="info">
+                                    <span class="name">Mark Cooper</span>
+                                    <br>
+                                    <span class="job-title">Co-Founder</span>
+                                </div>
+                            </div>
+                            <div class="social">
+                                <ul class="socail-list">
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- IMAGE-ROW-2 -->
+                    <div class="mem1">
+                        <div class="member-in">
+                            <div class="profile">
+                                <img class="img-res" src="image/member-4.png" />
+                                <div class="info">
+                                    <span class="name">Mark Cooper</span>
+                                    <br>
+                                    <span class="job-title">Co-Founder</span>
+                                </div>
+                            </div>
+                            <div class="social">
+                                <ul class="socail-list">
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mem1">
+                        <div class="member-in">
+                            <div class="profile">
+                                <img class="img-res" src="image/member-5.png" />
+                                <div class="info">
+                                    <span class="name">Mark Cooper</span>
+                                    <br>
+                                    <span class="job-title">Co-Founder</span>
+                                </div>
+                            </div>
+                            <div class="social">
+                                <ul class="socail-list">
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mem1">
+                        <div class="member-in">
+                            <div class="profile">
+                                <img class="img-res" src="image/member-6.png" />
+                                <div class="info">
+                                    <span class="name">Mark Cooper</span>
+                                    <br>
+                                    <span class="job-title">Co-Founder</span>
+                                </div>
+                            </div>
+                            <div class="social">
+                                <ul class="socail-list">
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- PRESSKIT -->
+            <div class="presskit">
+                <h3 class="press-title">Press Kit</h3>
+                <p class="press-cap">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+                    eget dolor. Aenean
+                    massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
+                    quam felis, ultricies nec.</p>
+                <p>Please <span><a class="contact-kit" href="">contact us</a></span> if you need more materials.</p>
+                <a class="download-kit" href="">Download Press Kit</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMPANY -->
+    <section id="company">
+        <div class="compa-contain">
+            <div class="container">
+                <!-- ROW1 -->
+                <div class="row">
+                    <div class="compa-row">
+                        <div class="compa-row-col">
+                            <h4 class="title">About Us</h4>
+                            <ul class="compa-about">
+                                <li class="compa-about-li"><a href="#"><i class="fas fa-caret-right"></i> Who we are</a>
+                                </li>
+                                <li class="compa-about-li"><a href="#"><i class="fas fa-caret-right"></i> Press</a></li>
+                                <li class="compa-about-li"><a href="#"><i class="fas fa-caret-right"></i> Blog</a></li>
+                                <li class="compa-about-li"><a href="#"><i class="fas fa-caret-right"></i> Jobs</a></li>
+                                <li class="compa-about-li"><a href="#"><i class="fas fa-caret-right"></i> Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="compa-row-col">
+                            <h4 class="title">Product</h4>
+                            <ul class="compa-about">
+                                <li class="compa-about-li"><a href="#"><i class="fas fa-caret-right"></i> How it
+                                        works</a>
+                                </li>
+                                <li class="compa-about-li"><a href="#"><i class="fas fa-caret-right"></i> API</a></li>
+                                <li class="compa-about-li"><a href="#"><i class="fas fa-caret-right"></i> Download
+                                        Apps</a>
+                                </li>
+                                <li class="compa-about-li"><a href="#"><i class="fas fa-caret-right"></i> Pricing</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="compa-row-col">
+                            <h4 class="title">Support</h4>
+                            <ul class="compa-about">
+                                <li class="compa-about-li"><a href="#"><i class="fas fa-caret-right"></i> Help</a></li>
+                                <li class="compa-about-li"><a href="#"><i class="fas fa-caret-right"></i>
+                                        Documentation</a>
+                                </li>
+                                <li class="compa-about-li"><a href="#"><i class="fas fa-caret-right"></i> Term of
+                                        services</a></li>
+                                <li class="compa-about-li"><a href="#"><i class="fas fa-caret-right"></i> Privacy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="company-col">
+                        <ul class="compa-col-in">
+                            <a href="">
+                                <li><i class="fab fa-twitter"></i></li>
+                            </a>
+                            <a href="">
+                                <li><i class="fab fa-facebook-f"></i></li>
+                            </a>
+                            <a href="">
+                                <li><i class="fab fa-google-plus-g"></i></li>
+                            </a>
+                            <a href="">
+                                <li><i class="fab fa-instagram"></i></li>
+                            </a>
+                            <a href="">
+                                <li><i class="fas fa-rss"></i></li>
+                            </a>
+                        </ul>
+                        <p class="compa-slo">Stay up to date with the latest news and offers from Velocity</p>
+                        <form class="compa-form">
+                            <div class="form-group">
+                                <input type="text" class="form-text" name="email"
+                                    placeholder="Enter your email address">
+                                <button type="submit" class="form-btn" name="button"><a href="">Subscribe
+                                        Now</a></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- ROW2 -->
+                <div class="row2">
+                    <div class="col2 btn2">
+                        <h4 class="title">Mobile apps</h4>
+                        <ul class="compa-mo">
+                            <li><a class="compa-mo-btn" href="#">
+                                    <i class="fab fa-apple"></i>
+                                    <span class="compa-text"> Download for iOS</span>
+                                </a></li>
+                            <li><a class="compa-mo-btn" href="#">
+                                    <i class="fab fa-android"></i>
+                                    <span class="compa-text"> Download for Android</span>
+                                </a></li>
+                            <li><a class="compa-mo-btn" href="#">
+                                    <i class="fab fa-windows"></i>
+                                    <span class="compa-text"> Windows coming soon...</span>
+                                </a></li>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col2 contact2">
+                        <h4 class="title">Contact us</h4>
+                        <div class="compa-contact">
+                            <p class="add">
+                                <i class="fas fa-map-marker pull-left"></i>
+                                <span class="add-group">
+                                    <span class="street">College Green</span><br>
+                                    <span class="number-house">56 College Green Road</span><br>
+                                    <span class="postal-code">BS1 XR18</span><br>
+                                    <span class="country">UK</span>
+                                </span>
+                            </p>
+                            <p class="phone"><i class="fas fa-phone"></i>
+                                <span class="phone-num">0800 123 4567</span>
+
+                            </p>
+                            <p class="mail"><i class="far fa-envelope"></i>
+
+                                <span class="mail-text"><a href="#"> enquires@website.com</a></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer id="main-footer">
+        <div class="container">
+            <div class="row center-xs center-sm center-md center-lg">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <p class="footer-text">Template Copyright &copy; <span class="foot-num">3rd Wave Media</span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <button onclick="topFunction()" id="myBtn" title="Scroll Back to Top"><i class="fas fa-chevron-up"></i></button>
+</body>
+
+</html>
